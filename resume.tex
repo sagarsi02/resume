@@ -1,0 +1,190 @@
+%-------------------------
+% Resume in Latex
+% Author : Sagar Singh
+% Based off of: https://github.com/sagarsi02
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape Sagar Singh} \\ \vspace{1pt}
+    \small 861-924-6684 $|$ \href{mailto:x@x.com}{\underline{sagarsi2408@gmail.com}} $|$ 
+    \href{https://github.com/sagarsi02}{\underline{github.com/sagarsi02}}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Bhabha University}{Bhopal, India}
+      {Bachelor of Technology in Computer Science}{Aug. 2018 -- May 2022}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {\textbf{Project 1 :} Head End System (HES) \hspace{2em} \textbf{Role:} Software Developer}{Jaipur}
+      {Polaris Smart Metering}{August 2022 -- Present}
+        \resumeItemListStart
+          \resumeItem{Contributed to the design and implementation of a \textbf{scalable system} to monitor and manage energy consumption for over \textbf{10 million electrical meters} across 4 Indian states: \textbf{Uttar Pradesh, Ladakh, Manipur, and West Bengal}.}
+          \resumeItem{Integrated \textbf{Kafka, Redis, and RabbitMQ} across \textbf{3+ microservices}, enhancing inter-service communication reliability and reducing data \textbf{latency by 20\%}.}
+          \resumeItem{Designed and developed scalable \textbf{RESTful APIs} with \textbf{cursor-based pagination} to efficiently handle large datasets of \textbf{1 million+ records}, ensuring fast and reliable data retrieval.}
+          \resumeItem{Implemented a \textbf{command validation and scheduling system}, reducing \textbf{unnecessary command executions by 15–20\%} and optimizing system operations.}
+          \resumeItem{Tech Stack: \textbf{Python, Django, PostgreSQL, Kafka, Redis, RabbitMQ, REST APIs, Docker, Git/GitHub}}
+    \resumeItemListEnd
+
+
+\resumeSubheading
+      {\textbf{Project 2 :} Work Force Management Integration \hspace{2em} \textbf{Role:} Software Developer}{Jaipur}
+      {Polaris Smart Metering}{August 2022 -- Present}
+        \resumeItemListStart
+              \resumeItem{Integrated with workforce management platforms like \textbf{WorkonGrid} and \textbf{Styra} to automate and streamline smart meter installation processes across consumer locations.}
+              \resumeItem{Developed and maintained robust \textbf{backend services} to ingest and process real-time installation data including \textbf{meter number, site ID, pole ID, feeder name, and consumer details}.}
+              \resumeItem{Implemented data validation and transformation pipelines to ensure accurate and consistent \textbf{meter installation status updates} within the system.}
+              \resumeItem{Optimized the backend for \textbf{high-concurrency processing}, enabling seamless real-time data synchronization across platforms.}
+              \resumeItem{Enhanced large-scale smart meter deployment capabilities by enabling \textbf{real-time backend coordination} with vendor systems.}
+              \resumeItem{Tech Stack: \textbf{Python, Django, PostgreSQL, Kafka, Redis, RabbitMQ, REST APIs, Docker, Git/GitHub}}
+        \resumeItemListEnd
+
+
+    \resumeSubheading
+      {\textbf{Project 3 :} Dlms Push Server \hspace{2em} \textbf{Role:} Software Developer}{Jaipur}
+      {Polaris Smart Metering}{August 2022 -- Present}
+        \resumeItemListStart
+              \resumeItem{Designed and developed a high-level \textbf{concurrent architecture} to handle \textbf{100K+ smart meter connections} via IPv6, enabling scalable and resilient data ingestion.}
+              \resumeItem{Integrated meters with a \textbf{Push Service} to automatically transmit real-time data and event-based updates (e.g., power on/off) to a designated IPv6 endpoint.}
+              \resumeItem{Built a backend listener to \textbf{decode, parse}, and route meter data to \textbf{Kafka topics}, followed by ingestion into the database through a dedicated service.}
+              \resumeItem{Established reliable \textbf{inter-service communication} and optimized system performance to support continuous, high-volume smart meter data processing.}
+              \resumeItem{Tech Stack: \textbf{Python, Django, PostgreSQL, Kafka, Redis, RabbitMQ, REST APIs, Docker, Git/GitHub}}
+        \resumeItemListEnd
+   \resumeSubHeadingListEnd
+%-------------------------------------------
+
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+\begin{itemize}[leftmargin=0.15in, label={}]
+  \small{
+    \item{
+      \textbf{Languages:} Python, Php, Go (Golang), Java, C/C++, SQL, JavaScript, HTML/CSS \\
+      \textbf{Technologies/Frameworks:} Django, FastAPI, Flask, Laravel, PostgreSQL, Context API, Material-UI \\
+      \textbf{Developer Tools:} Docker, Pre-commit, Commitizen, Kafka, RabbitMQ, Redis, AWS, Git, GitHub, VS Code \\
+      \textbf{Domains:} Data Structures & Algorithms (DSA), Databases, Operating Systems, OOP \\
+      \textbf{Prorotocol : } TCP \& DLMS
+    }
+  }
+\end{itemize}
+
+
+
+
+%-------------------------------------------
+\end{document}
