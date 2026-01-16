@@ -1,0 +1,183 @@
+%-------------------------
+% ATS-Optimized Resume
+% Author : Sagar Singh
+% Target ATS Score: 90+
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape Sagar Singh} \\ \vspace{1pt}
+    \small 861-924-6684 $|$ \href{mailto:sagarsi2408@gmail.com}{\underline{sagarsi2408@gmail.com}} $|$ 
+    \href{https://linkedin.com/in/sagarsingh}{\underline{linkedin.com/in/sagarsingh}} $|$
+    \href{https://github.com/sagarsi02}{\underline{github.com/sagarsi02}}
+\end{center}
+
+%-----------PROFESSIONAL SUMMARY-----------
+\section{Professional Summary}
+\begin{itemize}[leftmargin=0.15in, label={}]
+  \small{
+    \item{Results-driven \textbf{Backend Software Engineer} with \textbf{3.5+ years} of experience designing and deploying scalable \textbf{distributed systems} and \textbf{microservices architectures}. Expertise in \textbf{Python, Django, FastAPI}, and \textbf{event-driven architectures} using \textbf{Kafka, Redis, and RabbitMQ}. Proven track record of optimizing high-volume data processing systems serving \textbf{1M+ IoT devices}, reducing latency by \textbf{20\%}, and improving system efficiency by \textbf{15-20\%}. Skilled in \textbf{RESTful API development}, \textbf{asynchronous programming}, \textbf{cloud infrastructure (AWS)}, and \textbf{containerization (Docker)}. Strong foundation in \textbf{concurrent programming}.}
+  }
+\end{itemize}
+
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+\begin{itemize}[leftmargin=0.15in, label={}]
+  \small{
+    \item{
+      \textbf{Programming Languages:} Python, Go (Golang), PHP, Java, SQL, JavaScript, HTML/CSS \\
+      \textbf{Backend Frameworks \& Libraries:} Django, FastAPI, Flask, asyncio, concurrent.futures \\
+      \textbf{Databases \& Caching:} PostgreSQL, MySQL, Redis, Database Optimization \\
+      \textbf{Message Brokers \& Event Streaming:} Apache Kafka, RabbitMQ, Event-Driven Architecture \\
+      \textbf{Cloud \& DevOps:} AWS (EC2, S3, Lambda), Docker, Docker Compose, CI/CD, Git, GitHub \\
+      \textbf{API Development:} RESTful APIs, API Design, Pagination Strategies, API Documentation \\
+      \textbf{Protocols \& Standards:} TCP/IP, IPv6, DLMS/COSEM Protocol, WebSocket \\
+      \textbf{Development Tools:} VS Code, Pre-commit, Commitizen, Postman, Linux/Unix \\
+      \textbf{Core Competencies:} Microservices Architecture, Asynchronous Programming, Concurrency, Distributed Systems, Object-Oriented Programming (OOP), System Design, Performance Optimization
+    }
+  }
+\end{itemize}
+
+%-----------PROFESSIONAL EXPERIENCE-----------
+\section{Professional Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Software Engineer - Backend Development}{August 2022 -- Present}
+      {Polaris Smart Metering}{Jaipur, India}
+        \resumeItemListStart
+          \resumeItem{Architected and deployed a \textbf{distributed Head End System (HES)} serving \textbf{1M+ smart electricity meters} across 5 states (Uttar Pradesh, Ladakh, Manipur, West Bengal and Bihar), enabling real-time energy consumption monitoring and management at scale.}
+          \resumeItem{Engineered \textbf{event-driven microservices architecture} integrating \textbf{Apache Kafka, Redis, and RabbitMQ} across 3+ services, achieving \textbf{20\% reduction in data latency} and ensuring \textbf{99.9\% inter-service communication reliability}.}
+          \resumeItem{Designed and developed \textbf{high-performance RESTful APIs} with \textbf{cursor-based pagination} using \textbf{Django and FastAPI}, efficiently handling datasets exceeding \textbf{1 million records} with sub-second response times.}
+          \resumeItem{Implemented \textbf{intelligent command validation and scheduling system} using \textbf{asynchronous task queues}, reducing \textbf{unnecessary command executions by 15-20\%} and optimizing resource utilization across distributed infrastructure.}
+          \resumeItem{Built \textbf{concurrent DLMS Push Server} leveraging \textbf{Python asyncio} to handle \textbf{100,000+ simultaneous IPv6 smart meter connections}, processing real-time telemetry data and event notifications with high throughput and low latency.}
+          \resumeItem{Developed \textbf{real-time data ingestion pipeline} with backend listeners to decode, parse, and route \textbf{DLMS/COSEM protocol} data to Kafka topics, followed by asynchronous database writes, supporting \textbf{high-volume continuous data streams}.}
+          \resumeItem{Integrated with workforce management platforms (\textbf{WorkonGrid, Styra}) to automate smart meter installation workflows, developing \textbf{robust backend services} for real-time data synchronization including meter provisioning, site mapping, and consumer management.}
+          \resumeItem{Optimized \textbf{PostgreSQL database queries} and implemented \textbf{Redis caching strategies}, improving query performance by \textbf{30\%} and reducing database load during peak traffic periods.}
+          \resumeItem{Deployed and managed \textbf{containerized applications} using \textbf{Docker} and orchestrated services on \textbf{AWS infrastructure (EC2, S3)}, ensuring scalability, reliability, and seamless CI/CD deployment pipelines.}
+          \resumeItem{Collaborated in \textbf{Agile/Scrum teams}, conducted code reviews, implemented \textbf{unit and integration testing}, and maintained \textbf{comprehensive API documentation} to ensure code quality and maintainability.}
+        \resumeItemListEnd
+   \resumeSubHeadingListEnd
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Bachelor of Technology in Computer Science}{Aug. 2018 -- May 2022}
+      {Mansarovar Global University}{Bhopal, India}
+  \resumeSubHeadingListEnd
+
+%-----------AWARDS & RECOGNITION-----------
+\section{Awards \& Recognition}
+\begin{itemize}[leftmargin=0.15in, label={}]
+  \small{
+    \item{
+      $\bullet$ \textbf{Letter of Appreciation} from PolarisGrids Private Limited for \textbf{outstanding contribution, technical excellence, and problem-solving mindset} in shaping platforms, strengthening system reliability, and delivering value to clients (2022 - 2025) \\
+      $\bullet$ Recognized by senior management for \textbf{commitment, reliability, and positive impact} in making Polaris what it is today
+    }
+  }
+\end{itemize}
+
+%-----------KEY ACHIEVEMENTS-----------
+\section{Key Achievements \& Projects}
+\begin{itemize}[leftmargin=0.15in, label={}]
+  \small{
+    \item{
+      $\bullet$ Successfully scaled smart metering infrastructure to support \textbf{1M+ active devices} with \textbf{99.9\% uptime} \\
+      $\bullet$ Reduced system latency by \textbf{20\%} through strategic implementation of message queuing and caching \\
+      $\bullet$ Optimized backend operations resulting in \textbf{15-20\% efficiency gains} in command processing \\
+      $\bullet$ Built high-concurrency server architecture handling \textbf{100K+ simultaneous connections} using asyncio \\
+      $\bullet$ Contributed to open-source projects on GitHub with focus on Python backend development
+    }
+  }
+\end{itemize}
+
+%-------------------------------------------
+\end{document}
